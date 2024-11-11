@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+$font-family-sans-serif: 'Playfair Display', serif;
+
+$primary: #FF5733; 
+$secondary: #C70039;
+$success: #28a745; 
+$info: #17a2b8;
+$warning: #FFC107;
+$danger: #DC3545;
+$light: #F8F9FA; 
+$dark: #343A40; 
+$custom-color-1: #6C3483;
+$custom-color-2: #2980B9;
+
+$font-weight-light: 300;  
+$font-weight-normal: 400; 
+$font-weight-semibold: 600;
+$font-weight-bold: 700;    
+// Import Bootstrap
+@import '~bootstrap/scss/bootstrap';
