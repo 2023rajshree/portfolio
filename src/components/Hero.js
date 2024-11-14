@@ -16,7 +16,10 @@ export default function Hero() {
             <h1>Rajshree Tungare</h1>
             <h2>Web Developer</h2>
             <div>
-              <button className="btn">Get in touch</button>
+              <button className="btn" onClick={() =>
+              (window.location.href =
+                "mailto:tungare.rajshree@gmail.com?subject=Are%20You%20Ready%20for%20the%20Best%20Email%20of%20Your%20Day%3F")
+            }>Get in touch</button>
               <button className="btn">Download Resume</button>
             </div>
           </div>
@@ -28,10 +31,13 @@ export default function Hero() {
                 <span className="button-yellow"></span>
                 <span className="button-green"></span>
               </div>
-              <div className="row container">ju</div>
+              <div className="row container"></div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="construction-tape">
+        <span>Under Construction</span>
       </div>
     </section>
   );
