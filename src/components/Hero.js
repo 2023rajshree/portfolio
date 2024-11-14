@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import illustrate from "../assets/illustrate.jpeg";
 
 export default function Hero() {
-  const messages = [
+
+  const messages = useMemo(() => [
     { command: "console.log", text: '"hello there!"' },
     { command: "alert", text: '"How are you?"' },
     { command: "document.write", text: '"Welcome to my React app!"' },
     { command: "console.warn", text: '"Woman at work!"' },
-  ];
-
+  ], []);
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
