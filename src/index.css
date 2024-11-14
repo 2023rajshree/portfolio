@@ -47,16 +47,6 @@ Footer {
   overflow: hidden;
 }
 
-.circle-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
-
-
-
 .button-container {
   display: flex;
   justify-content: start;
@@ -107,4 +97,53 @@ Footer {
   font-size: 50px;
   display: inline-block;
   transform: rotate(3deg);
+}
+
+.console-text {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #1e1e1e;
+  color: #c0c0c0;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border-radius: 8px;
+}
+
+.typewriter {
+  display: inline-block;
+  border-right: 2px solid #f39c12;
+  padding-right: 5px;
+}
+
+.cursor-console {
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.bg-light {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.button-container {
+  display: flex;
+  gap: 6px;
+  padding: 8px;
+}
+
+.border {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+h4.typewriter {
+  font-size: 1rem;
 }
